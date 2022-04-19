@@ -1,0 +1,24 @@
+<div class="flex justify-center gap-20 flex-wrap py-16">
+  <div *ngFor="let p of produto">
+    <div class="w-72 shadow-lg shadow-black bg-white rounded-2xl">
+      <div class="flex justify-center py-5 text-xl font-semibold">
+        <div class="flex justify-center">
+          <div>{{ p.nome }}</div>
+        </div>
+      </div>
+      <img src="{{ p.foto }}" alt="Photo of a Shiba Inu" />
+      <div class="text-2xl font-semibold px-5 py-1 text-center">
+        ${{ p.preco }}
+      </div>
+      <div class="text-base px-5 py-1">
+        <p>
+          {{ p.descricao }}
+        </p>
+      </div>
+      <div class="flex justify-around py-5">
+        <button class="border-2 rounded-xl border-black py-2 px-5 bg-black text-white">EDITAR</button>
+        <button class="border-2 rounded-xl border-black py-2 px-5 bg-black text-white">EXCLUIR</button>
+      </div>
+    </div>
+  </div>
+</div>

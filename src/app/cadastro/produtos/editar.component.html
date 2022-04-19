@@ -1,0 +1,10 @@
+<form class="flex flex-col items-center m-64" action="">
+  <div class="text-5xl">Cadastro de produtos</div>
+  <input [(ngModel)]="produto.nome" name="nome" class="text-2xl p-5 border-b-2 border-black w-96"  type="text" placeholder="Nome"  />
+  <input [(ngModel)]="produto.ingredientes" name="ingredientes" class="text-2xl p-5 border-b-2 border-black w-96" type="text" placeholder="Ingredientes" />
+  <input [(ngModel)]="produto.foto" name="foto" class="text-2xl p-5 border-b-2 border-black w-96" type="text" placeholder="Foto URL" />
+  <input [(ngModel)]="produto.preco" name="preco" class="text-2xl p-5 border-b-2 border-black w-96" type="number" placeholder="Preço" />
+  <div >
+    <button class="m-4 py-2 px-12 border-2 border-black" (click)="salvarProduto()">Gravar</button>
+  </div>
+</form>
