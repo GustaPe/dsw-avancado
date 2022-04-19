@@ -12,9 +12,9 @@ const routes: Routes = [
   {path: 'cadastro', component: CadastroComponent,
       children : [
         {path: "produtos" , component: ListarComponent},
-        {path: "produtos/incluir", component: IncluirComponent},
-        {path: "produtos/editar/:id", component: EditarComponent},
-        {path: "produtos/excluir/:id", component: ExcluirComponent},
+        {path: "incluir", component: IncluirComponent},
+        {path: "editar/:id", component: EditarComponent},
+        {path: "excluir/:id", component: ExcluirComponent},
       ]
   },
 ];
