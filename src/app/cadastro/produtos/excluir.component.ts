@@ -25,7 +25,7 @@ export class ExcluirComponent implements OnInit {
 
   excluirProduto() {
     this.cadastro.excluirProdutos(this.produto.id).subscribe(() => {
-      this.router.navigate(['cadastro/produtos']);
+      this.router.navigate(['']);
     });
   }
 

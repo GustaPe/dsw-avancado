@@ -20,11 +20,11 @@ export class EditarComponent implements OnInit {
     });
   }
 
-  salvarProduto() {
+  editarProduto() {
     this.cadastro
       .atualizarProdutos(this.produto, this.produto.id)
       .subscribe(() => {
-        this.router.navigate(['/cadastro/produtos']);
+        this.router.navigate(['']);
       });
   }
 }
