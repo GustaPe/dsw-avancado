@@ -1,10 +1,12 @@
-<form class="flex flex-col items-center m-64 space-y-10" action="">
-  <div class="text-5xl">Editar de produtos</div>
-  <input [(ngModel)]="produto.nome" name="nome" class="text-2xl p-5 border-b-2 border-black w-96"  type="text" placeholder="Nome"  />
-  <input [(ngModel)]="produto.descricao" name="descricao" class="text-2xl p-5 border-b-2 border-black w-96" type="text" placeholder="descricao" />
-  <input [(ngModel)]="produto.foto" name="foto" class="text-2xl p-5 border-b-2 border-black w-96" type="text" placeholder="Foto URL" />
-  <input [(ngModel)]="produto.preco" name="preco" class="text-2xl p-5 border-b-2 border-black w-96" type="text" placeholder="Preço" />
-  <div >
-    <button class="m-4 py-2 px-12 border-2 border-black" (click)="editarProduto()">Gravar</button>
-  </div>
-</form>
+<div class="flex justify-center">
+  <form class="flex flex-col items-center m-8 border-2 border-black bg-slate-100 p-12 rounded-2xl space-y-10" action="">
+    <div class="text-5xl">Editar de produtos</div>
+    <input [(ngModel)]="produto.nome" name="nome" class="text-2xl p-5 border-2 border-black w-96 rounded-2xl py-3"  type="text" placeholder="Nome"  />
+    <input [(ngModel)]="produto.descricao" name="descricao" class="text-2xl p-5 border-2 border-black w-96 rounded-2xl py-3" type="text" placeholder="descricao" />
+    <input [(ngModel)]="produto.foto" name="foto" class="text-2xl p-5 border-2 border-black w-96 rounded-2xl py-3" type="text" placeholder="Foto URL" />
+    <input [(ngModel)]="produto.preco" name="preco" class="text-2xl p-5 border-2 border-black w-96 rounded-2xl py-3" type="text" placeholder="Preço" />
+    <div >
+      <button class="m-4 py-2 px-12 border-2 border-black rounded-2xl bg-black text-white" (click)="editarProduto()">Gravar</button>
+    </div>
+  </form>
+</div>

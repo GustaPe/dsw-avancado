@@ -1,3 +1,21 @@
-<div>
- <app-card></app-card>
-</div>
+<div class="flex justify-center gap-20 flex-wrap py-16">
+    <div *ngFor="let p of produtos">
+      <div class="w-72 shadow-lg shadow-slate-800 bg-white rounded-2xl">
+        <div class="flex justify-center py-5 text-xl font-semibold">
+          <div class="flex justify-center">
+            <div>{{ p.nome }}</div>
+          </div>
+        </div>
+        <img src="{{ p.foto }}" alt="Picture" />
+        <div class="text-2xl font-semibold px-5 py-1 text-center">
+          R$ {{ p.preco }}
+        </div>
+        <div class="text-base px-5 py-1">
+          <p>
+            {{ p.descricao }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
